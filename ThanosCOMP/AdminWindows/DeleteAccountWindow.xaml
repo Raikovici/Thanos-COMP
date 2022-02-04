@@ -1,0 +1,16 @@
+﻿<Window x:Class="ThanosCOMP.AdminWindows.DeleteAccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThanosCOMP.AdminWindows"
+        mc:Ignorable="d"
+        Title="DeleteAccountWindow" Height="300" Width="400">
+    <Grid>
+        <Button x:Name="DeleteButton" Background="Fuchsia" Content="Delete" HorizontalAlignment="Left" Margin="85,160,0,0" VerticalAlignment="Top" Height="32" Width="92" Click="DeleteButton_Click"/>
+        <ComboBox x:Name="UserList" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="UserList_SelectionChanged"
+                  ItemsSource="{Binding}"/>
+        <Button x:Name="CloseButton" Background="Fuchsia" Content="Close" HorizontalAlignment="Left" Margin="255,160,0,0" VerticalAlignment="Top" Height="32" Width="92" Click="CloseButton_Click"/>
+
+    </Grid>
+</Window>

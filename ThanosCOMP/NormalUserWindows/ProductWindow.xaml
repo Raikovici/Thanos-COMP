@@ -1,0 +1,246 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThanosCOMP.NormalUserWindows"
+        xmlns:view="clr-namespace:ThanosCOMP.NormalUserWindows"
+        xmlns:curr="clr-namespace:ThanosCOMP.NormalUserWindows.MVVM.ViewModel"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="ThanosCOMP.NormalUserWindows.ProductWindow"
+        mc:Ignorable="d"
+        Title="ProductWindow" Height="460" Width="800">
+
+    <Grid>
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7BE9F6" Offset="0.0"/>
+                    <GradientStop Color="#F083DA" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Height="50">
+                <TextBlock Text="PRODUCT_NAME&#xA;CATEGORY "
+                           Foreground="White"
+                           FontSize="18"
+                           HorizontalAlignment="Left"
+                           Margin="10,0,0,0"
+                           Width="175"
+                           Height="50"
+                />
+                <TextBox x:Name="ProductAndCategoryName" 
+                         Height="50"
+                         Width="250"
+                         IsReadOnly="True"
+                         Foreground="Blue"
+                         Background="Transparent"
+                />
+            </StackPanel>
+            
+            
+            <StackPanel Orientation="Horizontal"
+                    Margin="0,0,-0.4,10" Height="230">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="20,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Border Height="Auto"
+                    Width="234" Margin="20,13,0,21.4">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                            <GradientStop Color="#F083DA" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,250,250"
+                                       />
+
+                    </Border.Clip>
+                    <Grid>
+                        <Image x:Name="ProductImage"
+                           Height="Auto"
+                           Width="Auto"
+                               />
+                    </Grid>
+
+
+                </Border>
+                <StackPanel Orientation="Vertical"
+                    Margin="5,15,0,21.2" Width="143">
+                    <TextBlock Text="Supplied by:"
+                               Foreground="White"
+                               FontSize="18"
+                               HorizontalAlignment="Left"
+                               Margin="20,0,0,20" Height="30" Width="122"
+                    />
+                    <TextBlock Text="Shipped by:"
+                               Foreground="White"
+                               FontSize="18"
+                               HorizontalAlignment="Left"
+                               Margin="20,0,0,20"
+                    />
+                    <TextBlock Text="Price:"
+                               Foreground="White"
+                               FontSize="18"
+                               HorizontalAlignment="Left"
+                               Margin="20,0,0,20"
+                       />
+                    <TextBlock Text="Stock Status:"
+                               Foreground="White"
+                               FontSize="18"
+                               HorizontalAlignment="Left"
+                               Margin="20,0,0,20"
+                    />
+                    <!--<StackPanel Orientation="Horizontal">
+
+                        --><!--<TextBlock Text="Units:"
+                                   Foreground="White"
+                                   FontSize="18"
+                                   HorizontalAlignment="Left"
+                                   Margin="20,0,0,0"
+                        />--><!--
+                    </StackPanel>-->
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="0,15,0,21.2" Width="143">
+                    <TextBox x:Name="SupplierName" 
+                             Background="Transparent"
+                             Foreground="Blue"
+                             FontSize="18"
+                             HorizontalAlignment="Left"
+                             IsReadOnly="True"
+                             Margin="0,2,0,20"
+                             Height="28"
+                             Width="143"
+                    />
+                    <TextBox x:Name="ShipperName" 
+                             Background="Transparent"
+                             Foreground="Blue"
+                             IsReadOnly="True"
+                             FontSize="18"
+                             HorizontalAlignment="Left"
+                             Margin="0,0,0,20"
+                             Width="143"
+                             Height="25"
+                    />
+                    <TextBox x:Name="PriceTag" 
+                             Background="Transparent"
+                             Foreground="Blue"
+                             IsReadOnly="True"
+                             FontSize="18"
+                             HorizontalAlignment="Left"
+                             Margin="0,0,0,20"
+                             Width="143"
+                             Height="25"
+                       />
+                    <TextBox x:Name="StockStatus"
+                             Background="Transparent"
+                             Foreground="Blue"
+                             IsReadOnly="True"
+                             FontSize="18"
+                             HorizontalAlignment="Left"
+                             Margin="0,0,0,20"
+                             Width="143"
+                             Height="25"
+                    />
+                    <!--<TextBox x:Name="Units"
+                             Background="Transparent"
+                             Foreground="Blue"
+                             FontSize="18"
+                             HorizontalAlignment="Left"
+                             Margin="0,0,0,20"
+                             Width="143"
+                             Height="22"
+                    />-->
+                </StackPanel>
+                <Button x:Name="AddToShoppingCartButton" Width="150"
+                    Height="80"
+                    Margin="50,100,0,0"
+                    Content="Add To&#xA;Shopping Cart" Click="AddToShoppingCartButton_Click"
+                />
+
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    Margin="0,0,-0.4,10" Height="47">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="20,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+
+                <TextBlock Text="Product description:"
+                           Foreground="White"
+                           FontSize="22"
+                           HorizontalAlignment="Left"
+                           Margin="20,0,0,20"
+                />
+                <TextBox x:Name="ProductDetails"
+                    IsReadOnly="True"
+                    Margin="20,0,0,0"
+                    Width="540"
+                    Background="Transparent"
+                    Foreground="#FC6B03"
+                    TextWrapping="Wrap"
+                />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="20,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Button x:Name="SupplierDescription" 
+                        Content="Supplier description"
+                        Foreground="White"
+                        FontSize="22"
+                        HorizontalAlignment="Left"
+                        Margin="40,0,0,20">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <TextBlock x:Name="suppButtonToolTip"
+                                           Text="" 
+                                           TextWrapping="Wrap"/>
+                            </ToolTip>
+                        </Button.ToolTip>
+                </Button>
+
+
+                <Button x:Name="ShipperDescription" 
+                        Content="Shipper description"
+                        Foreground="White"
+                        FontSize="22"
+                        HorizontalAlignment="Left"
+                        Margin="120,0,0,20">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <TextBlock x:Name="shippButtonToolTip"
+                                           Text="" 
+                                           TextWrapping="Wrap"/>
+                            </ToolTip>
+                        </Button.ToolTip>
+                </Button>
+                <Button x:Name="CloseButton" 
+                        Width="120"
+                        Margin="40,0,0,20"
+                        Height="30"
+                        Content="Close" Click="CloseButton_Click"
+                        
+                    />
+
+
+
+
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,96 @@
+﻿<Window x:Class="ThanosCOMP.NormalUserWindows.Shopping_Cart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:ThanosCOMP.NormalUserWindows.MVVM.ViewModel"
+        xmlns:local="clr-namespace:ThanosCOMP.NormalUserWindows"
+        mc:Ignorable="d"
+        Height="500" Width="700"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="85"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,0,10,0.2">
+
+
+                <Image Margin="20,20,20,20"
+                       Height="40"
+                       Source="D:\FolderAnul3\LaboratorABD\ThanosCOMP-part2\ourlogo.png"/>
+                
+                <TextBlock Text="Your Shopping Cart"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Foreground="White"
+                    FontSize="30"
+                    Margin="100,18,0,17.2"
+                       />
+
+
+            </StackPanel>
+
+            <DataGrid x:Name="ShoppingCartTable" Margin="0,0.2,10,26"
+                    ItemsSource="{Binding Collection}" AlternatingRowBackground="Azure" Grid.Column="1" Grid.Row="1" />
+            <Button
+                    Width="130"
+                    Height="50"
+                    Margin="30,300,38,21"
+                    Content="BUY PRODUCTS"
+                    FontSize="14" Grid.Row="1" Click="BUY_BUTTON"/>
+            
+            <Button
+                Margin="0,99.2,10,274"
+                Content="Remove Product"
+                FontSize="20" Grid.Row="1" Click="Remove_Button_Click"/>
+            <Button
+                Margin="0,31.2,126,357"
+                Content="BACK"
+                FontSize="20" Grid.Row="1" Click="Back_Button" RenderTransformOrigin="0.5,0.5">
+            </Button>
+            <Button
+                Margin="168,178.2,0,209"
+                Content="+"
+                FontSize="20" Grid.Row="1" Click="Plus_Button_Click" RenderTransformOrigin="0.464,0.109"/>
+            <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="222,127.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+            <Button
+                Margin="135,178.2,32,209"
+                Content="-"
+                FontSize="20" Grid.Row="1" Click="Minus_Button_Click"/>
+            <TextBox Name="QuantityBox" FontSize="20" HorizontalAlignment="Left" Height="27" Margin="90,193.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="45"/>
+            <TextBlock Text="Quantity:"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Foreground="White"
+                    FontSize="18"
+                    Margin="0,192.2,0,181"
+                       Grid.Row="1" Height="42" Width="105"
+                       />
+            <Button
+                Margin="140,211.2,5,172"
+                Content="OK"
+                FontSize="18" Grid.Row="1" Click="Edit_Quantity"/>
+
+        </Grid>
+    </Border>
+
+
+</Window>

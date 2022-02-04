@@ -1,0 +1,182 @@
+﻿<Window x:Class="ThanosCOMP.LoginAndRegisterWindows.AdditionalInfoWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:ThanosCOMP.LoginAndRegisterWindows" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+		mc:Ignorable="d"
+		Title="AdditionalInfoWindow" Height="450" Width="380"
+		AllowsTransparency="True" Background="Transparent"
+		WindowStyle="None" ResizeMode="NoResize"
+		MouseDown="Window_MouseDown">
+
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid Grid.ColumnSpan="2" Margin="0,0,0,0">
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+
+			<Border CornerRadius="10" Grid.RowSpan="9">
+				<Border.Background>
+					<LinearGradientBrush>
+						<GradientStop Color="#7BE9F6" Offset="0.0"/>
+						<GradientStop Color="#F083DA" Offset="1"/>
+					</LinearGradientBrush>
+				</Border.Background>
+				<iconPacks:PackIconMaterial Kind="Close"
+										    VerticalAlignment="Center"
+										    HorizontalAlignment="Center"
+										    Foreground="White"
+										    Margin="354,10,10,423.6" RenderTransformOrigin="0.783,-0.017" MouseDoubleClick="PackIconMaterial_MouseDoubleClick"/>
+			</Border>
+            <StackPanel Grid.Row="0" >
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBox x:Name="UsrTextBox" Text="User"
+						 FontWeight="Light"
+						 FontFamily="helvetica"
+						 FontSize="20"
+						 Foreground="Black"
+						 Background="Transparent"
+						 HorizontalAlignment="Center"
+						 Width="235"
+						 HorizontalContentAlignment="Left"
+						 Opacity="0.5"
+						 BorderThickness="0"
+						 Height="25"
+						 Margin="63,0,0,0" MouseEnter="UsrTextBox_MouseEnter" MouseLeave="UsrTextBox_MouseLeave"  />
+                </StackPanel>
+                <Border Width="250"
+					        Height="2"
+					        Background="White"
+					        Opacity="0.5"/>
+
+            </StackPanel>
+            <StackPanel Grid.Row="1" >
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBox x:Name="FirstNameTextBox" Text="First Name"
+						 FontWeight="Light"
+						 FontFamily="helvetica"
+						 FontSize="20"
+						 Foreground="Black"
+						 Background="Transparent"
+						 HorizontalAlignment="Center"
+						 Width="235"
+						 HorizontalContentAlignment="Left"
+						 Opacity="0.5"
+						 BorderThickness="0"
+						 Height="25"
+						 Margin="63,0,0,0" MouseEnter="FirstNameTextBox_MouseEnter" MouseLeave="FirstNameTextBox_MouseLeave"  />
+                </StackPanel>
+                <Border Width="250"
+					        Height="2"
+					        Background="White"
+					        Opacity="0.5"/>
+
+            </StackPanel>
+                 <StackPanel Grid.Row="2" >
+						<StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                        <TextBox x:Name="LastNameTextBox" Text="Last Name"
+						             FontWeight="Light"
+						             FontFamily="helvetica"
+						             FontSize="20"
+						             Foreground="Black"
+						             Background="Transparent"
+						             HorizontalAlignment="Center"
+						             Width="235"
+						             HorizontalContentAlignment="Left"
+						             Opacity="0.5"
+						             BorderThickness="0"
+						             Height="25"
+						             Margin="63,0,0,0" MouseEnter="LastNameTextBox_MouseEnter" MouseLeave="LastNameTextBox_MouseLeave"  />
+                        </StackPanel>
+						<Border Width="250"
+					            Height="2"
+					            Background="White"
+					            Opacity="0.5"/>
+				 </StackPanel>
+				 <StackPanel Grid.Row="3" >
+						<StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+							<TextBox x:Name="EmailTextBox" Text="Email"
+						             FontWeight="Light"
+						             FontFamily="helvetica"
+									 FontSize="20"
+									 Foreground="Black"
+									 Background="Transparent"
+									 HorizontalAlignment="Center"
+									 Width="235"
+									 HorizontalContentAlignment="Left"
+									 Opacity="0.5"
+									 BorderThickness="0"
+									 Height="25"
+									 Margin="63,0,0,0" MouseEnter="EmailTextBox_MouseEnter" MouseLeave="EmailTextBox_MouseLeave"  />
+
+						</StackPanel>
+						<Border Width="250"
+					            Height="2"
+					            Background="White"
+					            Opacity="0.5"/>
+				 </StackPanel>
+				 <StackPanel Grid.Row="4" >
+						<StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+							<TextBox x:Name="AddressTextBox" Text="Address"
+									 FontWeight="Light"
+									 FontFamily="helvetica"
+									 FontSize="20"
+									 Foreground="Black"
+									 Background="Transparent"
+									 HorizontalAlignment="Center"
+									 Width="235"
+									 HorizontalContentAlignment="Left"
+									 Opacity="0.5"
+									 BorderThickness="0"
+									 Height="25"
+									 Margin="63,0,0,0" MouseEnter="AddressTextBox_MouseEnter" MouseLeave="AddressTextBox_MouseLeave"  />
+
+						</StackPanel>
+						<Border Width="250"
+								Height="2"
+								Background="White"
+								Opacity="0.5"/>
+				 </StackPanel>
+				 <StackPanel Grid.Row="5" >
+						<StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+							<TextBox x:Name="CardDetailsBox" Text="Card Details"
+									 FontWeight="Light"
+									 FontFamily="helvetica"
+									 FontSize="20"
+									 Foreground="Black"
+									 Background="Transparent"
+									 HorizontalAlignment="Center"
+									 Width="235"
+									 HorizontalContentAlignment="Left"
+									 Opacity="0.5"
+									 BorderThickness="0"
+									 Height="25"
+									 Margin="63,0,0,0" MouseEnter="CardDetailsBox_MouseEnter" MouseLeave="CardDetailsBox_MouseLeave"  />
+
+						</StackPanel>
+						<Border Width="250"
+								Height="2"
+								Background="White"
+								Opacity="0.5"/>
+				 </StackPanel>
+				 <StackPanel Grid.Row="7" Orientation="Horizontal">
+						<Button x:Name="SaveInfoButton" Width="100" Height="40" Content="SAVE" Margin="60,0,60,0" Click="SaveInfoButton_Click"/>
+						<Button x:Name="CloseButton" Width="100" Height="40" Content="CLOSE" Margin="0,0,0,0" Click="CloseButton_Click"/>
+
+				 </StackPanel>
+		</Grid>
+	</Grid>
+</Window>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="38b8bf8937c649cda0e6e707a4d5a4ff" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineRetailModel.Account" Width="1.5" PointX="1.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Category" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Order" Width="1.5" PointX="5.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Payment" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Photo" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Role" Width="1.5" PointX="1.5" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Shipping" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.ShoppingCart" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Supplier" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.Tax" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.User" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineRetailModel.ShoppingCartDetail" Width="2.625" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="OnlineRetailModel.FK_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_ProdCateg" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_OrderPayment" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_OrderShopCart" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_ProdShipping" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_ProdSupplier" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_ShopProd" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_ShopCart" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.FK_ShopUser" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineRetailModel.TaxDetails" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

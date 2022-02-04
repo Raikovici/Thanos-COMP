@@ -1,0 +1,69 @@
+﻿<Window x:Class="ThanosCOMP.NormalUserWindows.AddPaymentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:ThanosCOMP.NormalUserWindows.MVVM.ViewModel"
+        xmlns:local="clr-namespace:ThanosCOMP.NormalUserWindows"
+        mc:Ignorable="d"
+        Height="300" Width="500"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+
+
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="107.2"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,0,10,0.2">
+
+                <Image Margin="7,20,20,20"
+                       Height="30"
+                       Source="D:\FolderAnul3\LaboratorABD\ThanosCOMP-part2\ourlogo.png"/>
+
+            </StackPanel>
+            
+            <TextBlock Text="Card Details"
+                    Grid.Column="1"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Foreground="White"
+                    FontSize="30"
+                    Margin="75,18,0,17.2"
+                       />
+
+
+           
+            <Button Grid.ColumnSpan="2" Margin="85,149.8,331,29" Grid.Row="1" Content="Cancel" Click="Cancel_Button">
+
+            </Button>
+            <Button Margin="216.8,149.8,92,29" Grid.Row="1" Content="Save" Grid.Column="1" Click="Save_Button"/>
+
+            <TextBox 
+                x:Name="cardinfosTB"
+                Margin="75,56.8,70,132"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                FontSize="20"/>
+
+        </Grid>
+    </Border>
+
+
+</Window>

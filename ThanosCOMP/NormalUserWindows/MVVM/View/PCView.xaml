@@ -1,0 +1,407 @@
+﻿<UserControl x:Class="ThanosCOMP.NormalUserWindows.MVVM.View.PCView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ThanosCOMP.NormalUserWindows.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <StackPanel>
+        <TextBlock Text="Coming straight from the future "
+                   Foreground="White"
+                   FontSize="24"
+                   HorizontalAlignment="Left"
+                   Margin="20,0,0,20"
+                   />
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="20,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="0.0"/>
+                        <GradientStop Color="#d2f72e" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc_png.png"
+                           Margin="3,3,3,3"
+                           Height="95"
+                           Width="95"/>
+                    <Button x:Name="imageButton1" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93" Click="imageButton1_Click"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="1"/>
+                        <GradientStop Color="#d2f72e" Offset="0.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc1_png.png"
+                               Width="95"
+                               Height="95"
+                               Margin="3,3,3,3"/>
+                    <Button x:Name="imageButton2" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93" Click="imageButton2_Click"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="0.0"/>
+                        <GradientStop Color="#d2f72e" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc2_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,3"/>
+                    <Button x:Name="imageButton3" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93" Click="imageButton3_Click"
+                            />
+                </Grid>
+
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="1"/>
+                        <GradientStop Color="#d2f72e" Offset="0.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc3_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,3"/>
+                    <Button x:Name="imageButton4" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="0.0"/>
+                        <GradientStop Color="#d2f72e" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc4_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,3"/>
+                    <Button x:Name="imageButton5" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="20,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="1"/>
+                        <GradientStop Color="#d2f72e" Offset="0.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc6_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,3"/>
+                    <Button x:Name="imageButton6" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="0.0"/>
+                        <GradientStop Color="#d2f72e" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc7_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,3"/>
+                    <Button x:Name="imageButton7" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="1"/>
+                        <GradientStop Color="#d2f72e" Offset="0.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc8_png.png"
+                               Height="110"
+                               Width="110" 
+                               Margin="3,3,3,10"/>
+                    <Button x:Name="imageButton8" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="0.0"/>
+                        <GradientStop Color="#d2f72e" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc9_png.png"
+                               Height="90"
+                               Width="90" 
+                               Margin="3,3,3,-3"/>
+                    <Button x:Name="imageButton9" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="1"/>
+                        <GradientStop Color="#d2f72e" Offset="0.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc10_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,0"/>
+                    <Button x:Name="imageButton10" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="20,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="0.0"/>
+                        <GradientStop Color="#d2f72e" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc11_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,3"/>
+                    <Button x:Name="imageButton11" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="1"/>
+                        <GradientStop Color="#d2f72e" Offset="0.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc12_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,3"/>
+                    <Button x:Name="imageButton12" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="0.0"/>
+                        <GradientStop Color="#d2f72e" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc13_png.png"
+                               Height="95"
+                               Width="95" 
+                               Margin="3,3,3,-3"/>
+                    <Button x:Name="imageButton13" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="1"/>
+                        <GradientStop Color="#d2f72e" Offset="0.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc14_png.png"
+                               Height="90"
+                               Width="90" 
+                               Margin="3,3,3,0"/>
+                    <Button x:Name="imageButton14" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+            <Border Height="110"
+                    Width="110">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffffff" Offset="0.0"/>
+                        <GradientStop Color="#d2f72e" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,110,110"
+                                       />
+                </Border.Clip>
+                <Grid>
+                    <Image Source="/NormalUserWindows/Images/PCs/pc15_png.png"
+                               Height="90"
+                               Width="90" 
+                               Margin="3,3,3,-7"/>
+                    <Button x:Name="imageButton15" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Height="93"
+                            />
+                </Grid>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
